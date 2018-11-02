@@ -10,9 +10,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-package io.kubernetes.client;
+package io.kubernetes.client.util;
 
 import com.google.common.io.ByteStreams;
+import io.kubernetes.client.ApiClient;
+import io.kubernetes.client.ApiException;
+import io.kubernetes.client.Configuration;
 import io.kubernetes.client.models.V1Pod;
 import java.io.BufferedInputStream;
 import java.io.File;

@@ -1,4 +1,4 @@
-package io.kubernetes.client;
+package io.kubernetes.client.util;
 
 import com.google.common.io.ByteStreams;
 import com.google.common.primitives.Bytes;
@@ -7,6 +7,10 @@ import com.squareup.okhttp.MediaType;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.RequestBody;
 import com.squareup.okhttp.Response;
+import io.kubernetes.client.ApiClient;
+import io.kubernetes.client.ApiException;
+import io.kubernetes.client.Configuration;
+import io.kubernetes.client.Pair;
 import io.kubernetes.client.proto.Meta.DeleteOptions;
 import io.kubernetes.client.proto.Meta.Status;
 import io.kubernetes.client.proto.Runtime.TypeMeta;

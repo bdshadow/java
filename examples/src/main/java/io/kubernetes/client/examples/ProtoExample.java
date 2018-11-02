@@ -15,14 +15,14 @@ package io.kubernetes.client.examples;
 import io.kubernetes.client.ApiClient;
 import io.kubernetes.client.ApiException;
 import io.kubernetes.client.Configuration;
-import io.kubernetes.client.ProtoClient;
-import io.kubernetes.client.ProtoClient.ObjectOrStatus;
 import io.kubernetes.client.proto.Meta.ObjectMeta;
 import io.kubernetes.client.proto.V1.Namespace;
 import io.kubernetes.client.proto.V1.NamespaceSpec;
 import io.kubernetes.client.proto.V1.Pod;
 import io.kubernetes.client.proto.V1.PodList;
 import io.kubernetes.client.util.Config;
+import io.kubernetes.client.util.ProtoClient;
+import io.kubernetes.client.util.ProtoClient.ObjectOrStatus;
 import java.io.IOException;
 
 /**

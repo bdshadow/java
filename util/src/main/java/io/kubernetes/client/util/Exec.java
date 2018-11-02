@@ -10,18 +10,19 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-package io.kubernetes.client;
+package io.kubernetes.client.util;
 
-import static io.kubernetes.client.KubernetesConstants.*;
+import static io.kubernetes.client.util.KubernetesConstants.*;
 
 import com.google.common.io.CharStreams;
 import com.google.gson.reflect.TypeToken;
+import io.kubernetes.client.ApiClient;
+import io.kubernetes.client.ApiException;
+import io.kubernetes.client.Configuration;
 import io.kubernetes.client.models.V1Pod;
 import io.kubernetes.client.models.V1Status;
 import io.kubernetes.client.models.V1StatusCause;
 import io.kubernetes.client.models.V1StatusDetails;
-import io.kubernetes.client.util.WebSocketStreamHandler;
-import io.kubernetes.client.util.WebSockets;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -206,7 +207,7 @@ public class Exec {
     return exec;
   }
 
-  static int parseExitCode(ApiClient client, InputStream inputStream) {
+  public static int parseExitCode(ApiClient client, InputStream inputStream) {
     try {
       Type returnType = new TypeToken<V1Status>() {}.getType();
       String body;

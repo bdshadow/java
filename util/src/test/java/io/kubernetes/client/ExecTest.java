@@ -15,6 +15,7 @@ package io.kubernetes.client;
 import static org.junit.Assert.*;
 
 import io.kubernetes.client.util.ClientBuilder;
+import io.kubernetes.client.util.Exec;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;

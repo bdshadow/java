@@ -1,8 +1,10 @@
-package io.kubernetes.client;
+package io.kubernetes.client.util;
 
+import io.kubernetes.client.ApiClient;
+import io.kubernetes.client.ApiException;
+import io.kubernetes.client.Configuration;
+import io.kubernetes.client.Pair;
 import io.kubernetes.client.models.V1Pod;
-import io.kubernetes.client.util.WebSocketStreamHandler;
-import io.kubernetes.client.util.WebSockets;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
