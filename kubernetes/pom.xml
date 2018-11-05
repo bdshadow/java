@@ -147,6 +147,10 @@
           <artifactId>tools</artifactId>
           <groupId>com.sun</groupId>
         </exclusion>
+        <exclusion>
+          <artifactId>io.sundr</artifactId>
+          <groupId>sundr-core</groupId>
+        </exclusion>
       </exclusions>
     </dependency>
     <dependency>
