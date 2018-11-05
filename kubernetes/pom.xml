@@ -148,8 +148,8 @@
           <groupId>com.sun</groupId>
         </exclusion>
         <exclusion>
-          <artifactId>io.sundr</artifactId>
-          <groupId>sundr-core</groupId>
+          <artifactId>sundr-core</artifactId>
+          <groupId>io.sundr</groupId>
         </exclusion>
       </exclusions>
     </dependency>
